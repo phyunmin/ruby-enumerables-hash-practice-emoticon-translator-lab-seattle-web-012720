@@ -9,21 +9,15 @@ def load_library(path)
   hash = {"get_meaning":{}, "get_emoticon":{}}
   data.each do |meanings, emoticons|
     emoticons.each do |array|
-      hash[:get_emoticon][array[0]] = array[1]
-    end
-    if(hash[:get_meaning][emoticons[1]]==nil)
-      hash[:get_meaning]={}
-      hash[:get_meaning][emoticons[1]] = meanings.to_s
-    else
-      hash[:get_meaning][emoticons[1]] = meanings.to_s
+      if(hash[:get_meaning][emoticons[1]]==nil)
+        hash[:get_meaning]={}
+        hash[:get_meaning][emoticons[1]] = meanings.to_s
+      else
+        hash[:get_meaning][emoticons[1]] = meanings.to_s
+      end
+        hash[:get_emoticon][array[0]] = array[1]
     end
     
-    if(hash[:get_emoticon][emoticons[0]]==nil)
-      hash[:get_emoticon]={}
-      hash[:get_emoticon][emoticons[0]] = emoticons[1]
-    else
-      hash[:get_emoticon][emoticons[0]] = emoticons[1]
-    end
   end
   pp data.length
   pp data
