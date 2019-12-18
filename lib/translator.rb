@@ -14,6 +14,14 @@ def load_library(path)
     else
       hash[:get_meaning][array[1]] = key.to_s
     end
+    
+    if(hash[:get_emoticon][array[0]]==nil)
+      hash[:get_meaning]={}
+      hash[:get_meaning][array[0]] = array[1]
+    else
+      hash[:get_meaning][array[0]] = array[1]
+    end
+    
   end
   
   pp hash
