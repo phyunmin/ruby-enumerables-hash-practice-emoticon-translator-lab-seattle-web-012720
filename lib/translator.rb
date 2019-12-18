@@ -7,6 +7,7 @@ def load_library(path)
   hash = {}
   data = YAML.load_file(path)
   
+  data.each do 
   
   return list
 end
