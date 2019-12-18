@@ -4,9 +4,9 @@ def load_library(path)
   # code goes here
   require "yaml"
   data = {}
-  hash = {}
   data = YAML.load_file(path)
   
+  hash = {}
   data.each do |key, array|
     if(hash[:get_meaning][array[1]]==nil)
       hash[:get_meaning]={}
