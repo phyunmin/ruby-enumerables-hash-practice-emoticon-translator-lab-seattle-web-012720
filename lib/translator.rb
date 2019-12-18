@@ -23,7 +23,6 @@ def load_library(path)
     end
   end
   
-  puts hash
   return hash
 end
 
