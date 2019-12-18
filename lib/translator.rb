@@ -22,7 +22,8 @@ def load_library(path)
       hash[:get_emoticon][array[0]] = array[1]
     end
   end
-  pp data.length  
+  pp data.length
+  pp data
   pp hash
   return hash
 end
