@@ -16,7 +16,7 @@ def load_library(path)
     end
     
     if(hash[:get_emoticon][array[0]]==nil)
-      hash[:get_emoticon]={}
+      hash[:get_emoticon]={[]}
       hash[:get_emoticon][array[0]] = array[1]
     else
       hash[:get_emoticon][array[0]] = array[1]
