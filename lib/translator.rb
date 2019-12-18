@@ -3,7 +3,7 @@ require 'pp'
 def load_library(path)
   # code goes here
   require "yaml"
-  data = {}
+  data = []
   data = YAML.load_file(path)
   
   hash = {get_meaning:{}, get_emoticon:{}}
