@@ -7,7 +7,7 @@ def load_library(path)
   data = YAML.load_file(path)
   
   hash = {get_meaning:{}, get_emoticon:{}}
-  data.each do |key, array|
+  data.each_pair do |key, array|
     if(hash[:get_meaning][array[1]]==nil)
       hash[:get_meaning]={}
       hash[:get_meaning][array[1]] = key.to_s
