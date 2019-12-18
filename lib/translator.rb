@@ -12,6 +12,7 @@ def load_library(path)
       hash[:get_meaning]={}
       hash[:get_meaning][array[1]] = key.to_s
     else
+      hash[:get_meaning][array[1]] = key.to_s
     end
   end
   
