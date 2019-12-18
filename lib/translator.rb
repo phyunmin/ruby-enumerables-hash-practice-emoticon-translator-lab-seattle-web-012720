@@ -3,7 +3,10 @@
 def load_library(path)
   # code goes here
   require "yaml"
-  list = YAML.load_file(path)
+  data = {}
+  data = YAML.load_file(path)
+  
+  
   return list
 end
 
