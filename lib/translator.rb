@@ -4,7 +4,6 @@ def load_library
   # code goes here
   require "yaml"
   list = YAML.load_file('emoticons.yml')
-  
   pp list
   return list
 end
