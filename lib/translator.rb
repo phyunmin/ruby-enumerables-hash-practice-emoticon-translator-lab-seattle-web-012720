@@ -8,7 +8,7 @@ def load_library(path)
   data = YAML.load_file(path)
   
   data.each do |key, array|
-    
+    if(hash[:get_meaning])
   end
   
   return list
