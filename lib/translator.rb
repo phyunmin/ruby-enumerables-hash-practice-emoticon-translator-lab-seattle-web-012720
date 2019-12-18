@@ -15,7 +15,7 @@ def load_library(path)
       hash[:get_meaning][array[1]] = key.to_s
     end
   end
-  pp data
+  
   pp hash
   return hash
 end
