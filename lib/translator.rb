@@ -10,16 +10,16 @@ def load_library(path)
   data.each_pair do |key, array|
     if(hash[:get_meaning][array[1]]==nil)
       hash[:get_meaning]={}
-      hash[:get_meaning][array[1]] << key.to_s
+      hash[:get_meaning][array[1]] = key.to_s
     else
-      hash[:get_meaning][array[1]] << key.to_s
+      hash[:get_meaning][array[1]] = key.to_s
     end
     
     if(hash[:get_emoticon][array[0]]==nil)
       hash[:get_emoticon]={}
-      hash[:get_emoticon][array[0]] << array[1]
+      hash[:get_emoticon][array[0]] = array[1]
     else
-      hash[:get_emoticon][array[0]] << array[1]
+      hash[:get_emoticon][array[0]] = array[1]
     end
   end
   
