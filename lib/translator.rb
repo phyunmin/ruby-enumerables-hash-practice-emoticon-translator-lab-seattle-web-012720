@@ -15,8 +15,8 @@ def load_library(path)
       hash[:get_meaning][array[1]] = key.to_s
     end
   end
-  
-  return list
+  pp hash
+  return hash
 end
 
 def get_japanese_emoticon
