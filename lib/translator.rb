@@ -21,7 +21,6 @@ def load_library(path)
     else
       hash[:get_emoticon][array[0]] = array[1]
     end
-    
   end
   
   pp hash
