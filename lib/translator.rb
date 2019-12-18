@@ -9,6 +9,7 @@ def load_library(path)
   
   data.each do |key, array|
     if(hash[:get_meaning][array[1]]==nil)
+      hash[:get_meaning]={}
       hash[:get_meaning][array[1]] = key.to_s
     else
     end
