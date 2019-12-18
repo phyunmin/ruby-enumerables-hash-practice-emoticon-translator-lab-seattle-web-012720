@@ -10,8 +10,6 @@ def load_library(path)
   data.each do |meanings, emoticons|
     hash[:get_emoticon][emoticons[0]] = emoticons[1]
   end
-  pp data.length
-  pp data
   pp hash
   return hash
 end
